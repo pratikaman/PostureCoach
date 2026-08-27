@@ -1,0 +1,34 @@
+name: PostureCoach
+options:
+  bundleIdPrefix: com.pratikaman
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+targets:
+  PostureCoach:
+    type: application
+    platform: macOS
+    sources: [PostureCoach]
+    info:
+      path: PostureCoach/Info.plist
+      properties:
+        NSMotionUsageDescription: PostureCoach reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.
+        LSMinimumSystemVersion: "14.0"
+        LSUIElement: true
+        CFBundleShortVersionString: "1.0"
+        CFBundleVersion: "1"
+    settings:
+      base:
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: "-"
+        SWIFT_VERSION: "5.0"
+        ENABLE_HARDENED_RUNTIME: NO
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: PostureCoach/Info.plist
+schemes:
+  PostureCoach:
+    build:
+      targets:
+        PostureCoach: all
+    run:
+      config: Debug
