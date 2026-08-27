@@ -34,6 +34,21 @@ Or open `PostureMalone.xcodeproj` in Xcode and hit ⌘R.
 
 > First launch asks for **Motion & Fitness** access. Allow it — that's the whole app.
 
+## 🤖 Install with an AI agent
+
+Using Claude Code, Codex, Cursor, or any terminal agent? Paste this:
+
+```text
+Clone https://github.com/pratikaman/PostureMalone.git, cd into it,
+run ./build.sh, then run: open "build/Posture Malone.app"
+If swiftc is missing, tell me to run: xcode-select --install
+Don't try to grant permissions — I'll approve the Motion & Fitness
+prompt myself when it appears.
+```
+
+The agent handles the build; you handle the two human steps — approve the
+permission prompt, then click 🧠 → **Set Upright Posture**.
+
 ## Setup (10 seconds)
 
 1. Put the AirPods in
