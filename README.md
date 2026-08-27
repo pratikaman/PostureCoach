@@ -50,7 +50,7 @@ Or open `PostureMalone.xcodeproj` in Xcode and hit ⌘R.
 | Delay | how long before he speaks up (default 60s, repeats) |
 | Phrase + ▶ | what he says, with preview |
 | ⏸ | pause everything (icon shows a pause badge) |
-| 🧠 → `18°` | icon shows your tilt while you're slouching |
+| 🧠 `18°` | live tilt right in the menu bar — `↓` appears while slouching |
 
 Stats only count while the buds are in and streaming. Pauses and gaps never count.
 
