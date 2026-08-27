@@ -1,63 +1,65 @@
-# Posture Malone
+<p align="center">
+  <img src="art/AppIcon-1024.png" width="180" alt="Posture Malone icon" />
+</p>
 
-A menu-bar-only macOS "tech neck" coach driven by AirPods motion sensors.
-You've been slouchin' too long — Posture Malone notices, and says so in your ears
-(any AirPods that support spatial-audio head tracking), using Apple's public
-`CMHeadphoneMotionManager` API.
+<h1 align="center">Posture Malone</h1>
 
-Down-tilt is measured against gravity, so it's absolute and drift-free —
-the ideal use of this sensor. No Dock icon, no windows: just a brain in
-your menu bar.
+<p align="center"><i>You've been slouchin' too long — he notices, and says so in your ears.</i></p>
+
+A menu-bar macOS posture coach powered by your AirPods' motion sensors.
+No Dock icon, no windows. Just a brain 🧠 in your menu bar.
+
+## How it works
+
+- 🎧 AirPods stream head motion (`CMHeadphoneMotionManager`, public API)
+- 📐 Neck tilt is measured against **gravity** — absolute, drift-free
+- 🗣️ Slouch too long → a phrase **you write** is spoken into your ears
+- 📊 Upright vs slouched time tracked per day (last 7 days)
 
 ## Requirements
 
-- macOS 14 or later
-- AirPods connected to this Mac and in your ears
-- Xcode (or just Command Line Tools if you use `build.sh`)
+| | |
+|---|---|
+| macOS | 14+ |
+| AirPods | any model with spatial-audio head tracking |
+| Build | Xcode — or just Command Line Tools |
 
 ## Run
-
-**With Xcode:** open `PostureMalone.xcodeproj`, press ⌘R.
-
-**Without Xcode:**
 
 ```bash
 ./build.sh && open "build/Posture Malone.app"
 ```
 
-On first launch macOS asks for Motion & Fitness access — allow it, or
-nothing streams. (The popover shows the current permission state and any
-sensor error while it's not streaming.)
+Or open `PostureMalone.xcodeproj` in Xcode and hit ⌘R.
 
-The project file is generated with [xcodegen](https://github.com/yonaskolb/XcodeGen)
-from `project.yml`; if you change the file layout, re-run `xcodegen generate`.
+> First launch asks for **Motion & Fitness** access. Allow it — that's the whole app.
 
-## Using it
+## Setup (10 seconds)
 
-1. Put the AirPods in, click the brain icon, sit the way you want to sit,
-   and click **Set Upright Posture** once. Recalibrate whenever your setup
-   changes (couch vs desk, reclined chair, laptop on lap).
-2. When you stay tilted past the threshold (default 15°) for longer than the
-   delay (default 60s), a phrase you write yourself is spoken (TTS) through
-   the AirPods — and again at the same interval while you stay slouched. The
-   menu bar icon shows the current down-tilt while you're slouching.
-3. The popover tracks upright vs slouched time per day (last 7 days shown).
-   Time only accumulates while the buds are in and streaming.
-4. The pause button in the popover header suspends counting and nudges (the
-   gauge stays live); the menu bar icon shows a pause badge until you resume.
+1. Put the AirPods in
+2. Click 🧠 → sit the way you want to sit → **Set Upright Posture**
+3. Done. Slouch and find out.
 
-Threshold, delay, the spoken phrase, and a preview button are all in the
-popover.
+## The popover
+
+| Thing | What it does |
+|---|---|
+| Gauge | live neck tilt, threshold marked |
+| **Set Upright Posture** | recalibrate — do it whenever your setup changes |
+| Threshold | how far you can tilt (default 15°) |
+| Delay | how long before he speaks up (default 60s, repeats) |
+| Phrase + ▶ | what he says, with preview |
+| ⏸ | pause everything (icon shows a pause badge) |
+| 🧠 → `18°` | icon shows your tilt while you're slouching |
+
+Stats only count while the buds are in and streaming. Pauses and gaps never count.
 
 ## Troubleshooting
 
-- **"Waiting for AirPods motion…"** — the buds must be *connected to this
-  Mac* (check the sound menu) and worn. If they auto-switched to your
-  iPhone, play any audio on the Mac to pull them back.
-- **Permission denied** — System Settings › Privacy & Security › Motion &
-  Fitness, enable Posture Malone.
+- **"Waiting for AirPods motion…"** → buds must be connected to *this Mac* and in your ears. iPhone stole them? Play any audio on the Mac.
+- **Permission denied** → System Settings › Privacy & Security › Motion & Fitness → enable Posture Malone.
 
-## Sibling project
+---
 
-The 3D head-orientation viewer this grew out of lives in
-[AirPodsHeadTracker](https://github.com/pratikaman/AirPodsHeadTracker).
+<p align="center">Sibling project: <a href="https://github.com/pratikaman/AirPodsHeadTracker">AirPodsHeadTracker</a> — the 3D head-orientation viewer this grew out of.<br/>
+Project file generated with <a href="https://github.com/yonaskolb/XcodeGen">xcodegen</a> (<code>xcodegen generate</code> after changing file layout).</p>
