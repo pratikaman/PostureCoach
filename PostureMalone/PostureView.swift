@@ -47,7 +47,7 @@ struct PostureView: View {
             footer
         }
         .padding(16)
-        .frame(width: 350)
+        .frame(width: 400)
         .background(Theme.bg)
         .preferredColorScheme(.dark)
     }
