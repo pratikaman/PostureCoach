@@ -12,6 +12,7 @@ targets:
     info:
       path: PostureMalone/Info.plist
       properties:
+        CFBundleIconFile: AppIcon
         NSMotionUsageDescription: Posture Malone reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.
         LSMinimumSystemVersion: "14.0"
         LSUIElement: true

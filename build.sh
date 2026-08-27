@@ -20,6 +20,7 @@ cp PostureMalone/Info.plist "$APP/Contents/Info.plist"
     -c "Set :CFBundleName Posture Malone" \
     -c "Set :CFBundleDevelopmentRegion en" \
     "$APP/Contents/Info.plist"
+cp PostureMalone/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 codesign --force --sign - "$APP"
 
 echo "Built $APP"
