@@ -311,22 +311,31 @@ struct PostureView: View {
     // MARK: Phrase
 
     private var phraseCard: some View {
-        HStack(spacing: 10) {
+        HStack(alignment: .center, spacing: 10) {
             Image(systemName: "chair")
                 .font(.system(size: 16, weight: .semibold))
                 .foregroundStyle(Theme.neon)
-            VStack(alignment: .leading, spacing: 2) {
-                TextField("What should he say?", text: $posture.speechText)
-                    .textFieldStyle(.plain)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundStyle(.white)
+            VStack(alignment: .leading, spacing: 4) {
+                Text("Nudge phrase")
+                    .font(.caption2)
+                    .foregroundStyle(Theme.dim)
+                HStack(spacing: 6) {
+                    Image(systemName: "pencil")
+                        .font(.system(size: 11))
+                        .foregroundStyle(Theme.faint)
+                    TextField("What should he say?", text: $posture.speechText)
+                        .textFieldStyle(.plain)
+                        .font(.system(size: 13, weight: .semibold))
+                        .foregroundStyle(.white)
+                }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 7)
+                .background(RoundedRectangle(cornerRadius: 8).fill(Color.black.opacity(0.35)))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(Color.white.opacity(0.14)))
                 Text("Your future self will high five you.")
                     .font(.caption2)
                     .foregroundStyle(Theme.dim)
             }
-            Spacer()
-            Image(systemName: "hand.raised.fill")
-                .foregroundStyle(Theme.neon)
         }
         .modifier(Card())
     }
