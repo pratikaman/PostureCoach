@@ -7,119 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151979DF0BDD153ED5B2141D /* PostureMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3D33C6D99951D5F1BDE88 /* PostureMonitor.swift */; };
-		BCE563F6D00C02DFDF372914 /* PostureCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAF05A173A5E0979AF6DD8E /* PostureCoachApp.swift */; };
-		C3B62DE6CC5646198B2C1608 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB574B6E5D667E57213DDBA /* MotionManager.swift */; };
-		D4AF860C389CCDDAF2EBFEF3 /* PostureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DAEBC340F95140A9C734D88 /* PostureView.swift */; };
+		2E1B02F6B6CAD44D17C43DC0 /* PostureMaloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B458E35371A42F0107CE77 /* PostureMaloneApp.swift */; };
+		72CD6085F2AF180398145783 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A0B946CEC432177E143845 /* MotionManager.swift */; };
+		75C3EA4B1A5532C1824EED13 /* PostureMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC0A790AE99273F186F2E5 /* PostureMonitor.swift */; };
+		AFBFFBE8EC47DADE4B0A5209 /* PostureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D2570A5D576E1C137397C /* PostureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0BB574B6E5D667E57213DDBA /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
-		4AAF05A173A5E0979AF6DD8E /* PostureCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureCoachApp.swift; sourceTree = "<group>"; };
-		53883FFC0E24765B55D48387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		623C39E999BF5F89EA5AF16B /* PostureCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostureCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8DAEBC340F95140A9C734D88 /* PostureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureView.swift; sourceTree = "<group>"; };
-		EFE3D33C6D99951D5F1BDE88 /* PostureMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureMonitor.swift; sourceTree = "<group>"; };
+		292D2570A5D576E1C137397C /* PostureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureView.swift; sourceTree = "<group>"; };
+		54EC0A790AE99273F186F2E5 /* PostureMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureMonitor.swift; sourceTree = "<group>"; };
+		73A0B946CEC432177E143845 /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		95036010575BEEBE38096E06 /* PostureMalone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostureMalone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E922DD730A99A4AC8246607E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9B458E35371A42F0107CE77 /* PostureMaloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostureMaloneApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		0FD22CF0A0E48632F3E26476 /* PostureCoach */ = {
+		4ABB83D4DE0D7BA904B86ABD = {
 			isa = PBXGroup;
 			children = (
-				53883FFC0E24765B55D48387 /* Info.plist */,
-				0BB574B6E5D667E57213DDBA /* MotionManager.swift */,
-				4AAF05A173A5E0979AF6DD8E /* PostureCoachApp.swift */,
-				EFE3D33C6D99951D5F1BDE88 /* PostureMonitor.swift */,
-				8DAEBC340F95140A9C734D88 /* PostureView.swift */,
+				A7614B884E82013F8B60EBD8 /* PostureMalone */,
+				8C542043C7D6DBC49BECD659 /* Products */,
 			);
-			path = PostureCoach;
 			sourceTree = "<group>";
 		};
-		161248326B6A4EA848ACE27A /* Products */ = {
+		8C542043C7D6DBC49BECD659 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				623C39E999BF5F89EA5AF16B /* PostureCoach.app */,
+				95036010575BEEBE38096E06 /* PostureMalone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2FDEB30E0F0A04719D4EBF3D = {
+		A7614B884E82013F8B60EBD8 /* PostureMalone */ = {
 			isa = PBXGroup;
 			children = (
-				0FD22CF0A0E48632F3E26476 /* PostureCoach */,
-				161248326B6A4EA848ACE27A /* Products */,
+				E922DD730A99A4AC8246607E /* Info.plist */,
+				73A0B946CEC432177E143845 /* MotionManager.swift */,
+				E9B458E35371A42F0107CE77 /* PostureMaloneApp.swift */,
+				54EC0A790AE99273F186F2E5 /* PostureMonitor.swift */,
+				292D2570A5D576E1C137397C /* PostureView.swift */,
 			);
+			path = PostureMalone;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F473B753C44A317C940B15A3 /* PostureCoach */ = {
+		7F159C350B4011577B169873 /* PostureMalone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BAFE32E74DC893C52222B6D4 /* Build configuration list for PBXNativeTarget "PostureCoach" */;
+			buildConfigurationList = 14B3A9E46E14EB163DF3645E /* Build configuration list for PBXNativeTarget "PostureMalone" */;
 			buildPhases = (
-				CCEEEE5DD9761F387D733771 /* Sources */,
+				BE2D7C6473A4CD9065738407 /* Sources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = PostureCoach;
+			name = PostureMalone;
 			packageProductDependencies = (
 			);
-			productName = PostureCoach;
-			productReference = 623C39E999BF5F89EA5AF16B /* PostureCoach.app */;
+			productName = PostureMalone;
+			productReference = 95036010575BEEBE38096E06 /* PostureMalone.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		82F10AEB00631F988CEDE045 /* Project object */ = {
+		FF633C83D97EB98C102AC7A2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					F473B753C44A317C940B15A3 = {
+					7F159C350B4011577B169873 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = CF4B587F026949601F86B903 /* Build configuration list for PBXProject "PostureCoach" */;
+			buildConfigurationList = F41F74706D2037B1E01DFAF2 /* Build configuration list for PBXProject "PostureMalone" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
 				en,
 			);
-			mainGroup = 2FDEB30E0F0A04719D4EBF3D;
+			mainGroup = 4ABB83D4DE0D7BA904B86ABD;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 161248326B6A4EA848ACE27A /* Products */;
+			productRefGroup = 8C542043C7D6DBC49BECD659 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F473B753C44A317C940B15A3 /* PostureCoach */,
+				7F159C350B4011577B169873 /* PostureMalone */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		CCEEEE5DD9761F387D733771 /* Sources */ = {
+		BE2D7C6473A4CD9065738407 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B62DE6CC5646198B2C1608 /* MotionManager.swift in Sources */,
-				BCE563F6D00C02DFDF372914 /* PostureCoachApp.swift in Sources */,
-				151979DF0BDD153ED5B2141D /* PostureMonitor.swift in Sources */,
-				D4AF860C389CCDDAF2EBFEF3 /* PostureView.swift in Sources */,
+				72CD6085F2AF180398145783 /* MotionManager.swift in Sources */,
+				2E1B02F6B6CAD44D17C43DC0 /* PostureMaloneApp.swift in Sources */,
+				75C3EA4B1A5532C1824EED13 /* PostureMonitor.swift in Sources */,
+				AFBFFBE8EC47DADE4B0A5209 /* PostureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2BDBF95217A5EF75CF39E3EC /* Debug */ = {
+		09EA0010460E3735E0693966 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PostureMalone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikaman.PostureMalone;
+				PRODUCT_NAME = "Posture Malone";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		59ADF35242985E3839DDA76A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -182,47 +203,7 @@
 			};
 			name = Debug;
 		};
-		50936C52FBB378663668AAF2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = NO;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = PostureCoach/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pratikaman.PostureCoach;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		AD455B431AE59FC0CC5AF6D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				ENABLE_HARDENED_RUNTIME = NO;
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = PostureCoach/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.pratikaman.PostureCoach;
-				SDKROOT = macosx;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		E062D4424DEB8E8FEB9F2921 /* Release */ = {
+		5DED6E2089486B0515181C7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,28 +259,49 @@
 			};
 			name = Release;
 		};
+		B085480731456588359041BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PostureMalone/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pratikaman.PostureMalone;
+				PRODUCT_NAME = "Posture Malone";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BAFE32E74DC893C52222B6D4 /* Build configuration list for PBXNativeTarget "PostureCoach" */ = {
+		14B3A9E46E14EB163DF3645E /* Build configuration list for PBXNativeTarget "PostureMalone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AD455B431AE59FC0CC5AF6D3 /* Debug */,
-				50936C52FBB378663668AAF2 /* Release */,
+				B085480731456588359041BE /* Debug */,
+				09EA0010460E3735E0693966 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		CF4B587F026949601F86B903 /* Build configuration list for PBXProject "PostureCoach" */ = {
+		F41F74706D2037B1E01DFAF2 /* Build configuration list for PBXProject "PostureMalone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2BDBF95217A5EF75CF39E3EC /* Debug */,
-				E062D4424DEB8E8FEB9F2921 /* Release */,
+				59ADF35242985E3839DDA76A /* Debug */,
+				5DED6E2089486B0515181C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 82F10AEB00631F988CEDE045 /* Project object */;
+	rootObject = FF633C83D97EB98C102AC7A2 /* Project object */;
 }

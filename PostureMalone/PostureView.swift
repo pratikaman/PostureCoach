@@ -193,7 +193,7 @@ struct PostureView: View {
 
     private var footer: some View {
         HStack {
-            Text("PostureCoach")
+            Text("Posture Malone")
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
             Spacer()

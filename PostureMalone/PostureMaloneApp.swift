@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct PostureCoachApp: App {
+struct PostureMaloneApp: App {
     @StateObject private var motion = MotionManager()
 
     var body: some Scene {

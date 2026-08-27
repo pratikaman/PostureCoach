@@ -1,18 +1,18 @@
-name: PostureCoach
+name: PostureMalone
 options:
   bundleIdPrefix: com.pratikaman
   deploymentTarget:
     macOS: "14.0"
   createIntermediateGroups: true
 targets:
-  PostureCoach:
+  PostureMalone:
     type: application
     platform: macOS
-    sources: [PostureCoach]
+    sources: [PostureMalone]
     info:
-      path: PostureCoach/Info.plist
+      path: PostureMalone/Info.plist
       properties:
-        NSMotionUsageDescription: PostureCoach reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.
+        NSMotionUsageDescription: Posture Malone reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.
         LSMinimumSystemVersion: "14.0"
         LSUIElement: true
         CFBundleShortVersionString: "1.0"
@@ -24,11 +24,12 @@ targets:
         SWIFT_VERSION: "5.0"
         ENABLE_HARDENED_RUNTIME: NO
         GENERATE_INFOPLIST_FILE: NO
-        INFOPLIST_FILE: PostureCoach/Info.plist
+        PRODUCT_NAME: "Posture Malone"
+        INFOPLIST_FILE: PostureMalone/Info.plist
 schemes:
-  PostureCoach:
+  PostureMalone:
     build:
       targets:
-        PostureCoach: all
+        PostureMalone: all
     run:
       config: Debug

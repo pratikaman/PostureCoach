@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F473B753C44A317C940B15A3"
-               BuildableName = "PostureCoach.app"
-               BlueprintName = "PostureCoach"
-               ReferencedContainer = "container:PostureCoach.xcodeproj">
+               BlueprintIdentifier = "7F159C350B4011577B169873"
+               BuildableName = "PostureMalone.app"
+               BlueprintName = "PostureMalone"
+               ReferencedContainer = "container:PostureMalone.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F473B753C44A317C940B15A3"
-            BuildableName = "PostureCoach.app"
-            BlueprintName = "PostureCoach"
-            ReferencedContainer = "container:PostureCoach.xcodeproj">
+            BlueprintIdentifier = "7F159C350B4011577B169873"
+            BuildableName = "PostureMalone.app"
+            BlueprintName = "PostureMalone"
+            ReferencedContainer = "container:PostureMalone.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F473B753C44A317C940B15A3"
-            BuildableName = "PostureCoach.app"
-            BlueprintName = "PostureCoach"
-            ReferencedContainer = "container:PostureCoach.xcodeproj">
+            BlueprintIdentifier = "7F159C350B4011577B169873"
+            BuildableName = "PostureMalone.app"
+            BlueprintName = "PostureMalone"
+            ReferencedContainer = "container:PostureMalone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F473B753C44A317C940B15A3"
-            BuildableName = "PostureCoach.app"
-            BlueprintName = "PostureCoach"
-            ReferencedContainer = "container:PostureCoach.xcodeproj">
+            BlueprintIdentifier = "7F159C350B4011577B169873"
+            BuildableName = "PostureMalone.app"
+            BlueprintName = "PostureMalone"
+            ReferencedContainer = "container:PostureMalone.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

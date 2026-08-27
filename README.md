@@ -1,7 +1,8 @@
-# PostureCoach
+# Posture Malone
 
-A menu-bar-only macOS "tech neck" coach driven by AirPods motion sensors
-(any model that supports spatial-audio head tracking), using Apple's public
+A menu-bar-only macOS "tech neck" coach driven by AirPods motion sensors.
+You've been slouchin' too long — Posture Malone notices, and says so in your ears
+(any AirPods that support spatial-audio head tracking), using Apple's public
 `CMHeadphoneMotionManager` API.
 
 Down-tilt is measured against gravity, so it's absolute and drift-free —
@@ -16,12 +17,12 @@ your menu bar.
 
 ## Run
 
-**With Xcode:** open `PostureCoach.xcodeproj`, press ⌘R.
+**With Xcode:** open `PostureMalone.xcodeproj`, press ⌘R.
 
 **Without Xcode:**
 
 ```bash
-./build.sh && open build/PostureCoach.app
+./build.sh && open "build/Posture Malone.app"
 ```
 
 On first launch macOS asks for Motion & Fitness access — allow it, or
@@ -54,7 +55,7 @@ popover.
   Mac* (check the sound menu) and worn. If they auto-switched to your
   iPhone, play any audio on the Mac to pull them back.
 - **Permission denied** — System Settings › Privacy & Security › Motion &
-  Fitness, enable PostureCoach.
+  Fitness, enable Posture Malone.
 
 ## Sibling project
 

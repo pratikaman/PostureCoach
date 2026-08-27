@@ -23,6 +23,6 @@
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSMotionUsageDescription</key>
-	<string>PostureCoach reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.</string>
+	<string>Posture Malone reads your AirPods' motion sensors to detect sustained neck tilt and remind you to sit up.</string>
 </dict>
 </plist>
